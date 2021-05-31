@@ -6,3 +6,6 @@ def test1():
 
 def test2():
     assert leap.is_leap(200) == False
+
+def test3():
+    assert leap.is_leap(800) == True
