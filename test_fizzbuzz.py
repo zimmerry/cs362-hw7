@@ -6,3 +6,9 @@ def test_first_line(capsys):
 
     output = capsys.readouterr().out.split('\n')[:-1]
     assert output[0] == "1"
+
+def test_third_line(capsys):
+    fizzbuzz.fizzbuzz()
+
+    output = capsys.readouterr().out.split('\n')[:-1]
+    assert output[2] == "Fizz"
